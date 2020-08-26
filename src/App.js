@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg'
+import logo from './logo.svg';
+import VideoCard from './VideoCard';
 
 function App() {
   return (
@@ -17,6 +18,18 @@ function App() {
       </div>
       <div className="app-videos">
         {/* Scrollable container for videos */}
+        <VideoCard
+          channel={channel}
+          avatarSrc={avatarSrc}
+          song={song}
+          url={url}
+          likes={likes}
+          shares={shares}>
+        </VideoCard>
+        <VideoCard></VideoCard>
+        <VideoCard></VideoCard>
+        <VideoCard></VideoCard>
+        <VideoCard></VideoCard>
         {/* video */}
         {/* video */}
         {/* video */}
