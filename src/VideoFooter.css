@@ -1,4 +1,7 @@
-.video {
+.video-footer {
+  position: relative;
+  margin-left: 20px;
+  bottom: 100px;
 }
 .video-footer-text {
   position: absolute;
@@ -16,4 +19,21 @@
   color: white;
   font-weight: 900;
   text-transform: inherit;
+}
+
+.video-footer-ticker > .ticker {
+  width: 60%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+.video-footer-ticker > .h1 {
+  padding-top: 7px;
+  font-size: 12px;
+  color: white;
+}
+.video-footer-icon {
+  position: absolute;
+  left: 5px;
+  color: white;
 }
