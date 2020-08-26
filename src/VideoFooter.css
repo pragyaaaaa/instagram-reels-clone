@@ -27,7 +27,7 @@
   margin-bottom: 20px;
   height: fit-content;
 }
-.video-footer-ticker > .h1 {
+.video-footer-ticker h1 {
   padding-top: 7px;
   font-size: 12px;
   color: white;

@@ -15,6 +15,7 @@ function VideoFooter({ url, likes, shares, channel, avatarSrc, song }) {
                 <h3>
                     {channel} ◻ <Button>Follow</Button>
                 </h3>
+                </div>
                 <div className="video-footer-ticker">
                     <MusicNoteIcon
                         className="video-footer-icon">
@@ -47,8 +48,6 @@ function VideoFooter({ url, likes, shares, channel, avatarSrc, song }) {
                     </div>
                 </div>
             </div>
-
-        </div>
     )
 }
 

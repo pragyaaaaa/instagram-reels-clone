@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import VideoCard from './VideoCard';
+import db from './firebase';
+import video from './dummyVideo.mp4';
 
 function App() {
+  const [reels, setReels] = useState([]);
+  useEffect(() => {
+    db.collection('instagram-reels').onSnapshot(snapshot => (
+      setReels(snapshot.docs.map(doc => doc.data()))
+    ))
+  }, [])
   return (
     <div className="app">
       <div className="app-top">
@@ -18,18 +26,15 @@ function App() {
       </div>
       <div className="app-videos">
         {/* Scrollable container for videos */}
-        <VideoCard
+        {reels.map(({likes, shares, channel, avatarSrc, song})=>(
+          <VideoCard
           channel={channel}
           avatarSrc={avatarSrc}
           song={song}
-          url={url}
+          url={video}
           likes={likes}
-          shares={shares}>
-        </VideoCard>
-        <VideoCard></VideoCard>
-        <VideoCard></VideoCard>
-        <VideoCard></VideoCard>
-        <VideoCard></VideoCard>
+          shares={shares}/>
+        ))}
         {/* video */}
         {/* video */}
         {/* video */}

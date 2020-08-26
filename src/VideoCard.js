@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './VideoCard.css';
-import video from './dummyVideo.mp4';
+
 import VideoHeader from './VideoHeader';
 import VideoFooter from './VideoFooter';
 function VideoCard({ url, likes, shares, channel, avatarSrc, song }) {
