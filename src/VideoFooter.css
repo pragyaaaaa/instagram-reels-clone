@@ -37,3 +37,24 @@
   left: 5px;
   color: white;
 }
+.video-footer-action {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  justify-content: space-between;
+  color: white;
+}
+.video-footer-action-left > .MuiSvgIcon-root {
+  padding: 0 10px;
+}
+.video-footer-action-right {
+  display: flex;
+}
+.video-footer-stat {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.video-footer-stat > p {
+  margin-left: 3px;
+}
